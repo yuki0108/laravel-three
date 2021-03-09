@@ -34,10 +34,6 @@ class PostsController extends Controller
 
     public function show($post_id)
     {
-        $post = Post::findOrFail($post_id);
-
-        return view('posts.show', [
-            'post' => $post,
-        ]);
+        
     }
 }
